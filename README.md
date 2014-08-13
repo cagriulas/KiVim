@@ -6,9 +6,9 @@
 
 ## About
 
-KiVim a plugin combination for Vim. It means 'my kiwi' in Turkish.
+KiVim a plugin combination for Vim. It means 'my kiwi' in Turkish. These plugins were put together for Python Development.
 
-Importent: This project is not finished yet.
+Importent: This project has not finished yet.
 
 
 
@@ -21,7 +21,7 @@ __Plugin Manager__
 
 __Debugging__
 
-This is not activated yet just check these plugins before me
+This has not activated yet. Just check these plugins before me.
 
 [vim-debug][1]
 [vdebug][2]
@@ -49,6 +49,7 @@ __Folder Navigator__
 
 __Syntax Checker__
 
+Ladies and Gentlemen this is Syntastic. This plugin checks your code for PEP8 compatibility. If you want to change this to another language, check this out.
 [syntastic][7]
 
 
@@ -69,6 +70,7 @@ __Status Bar__
 
 __Auto Completion__
 
+This plugin brings Vim to autocomplete Python statements. If you're not use KiVim for Python Development, use another autocompletion plugin instead of this.
 [jedi-vim][11]
 
 
@@ -79,11 +81,10 @@ __On Linux__
 
 Just run install.sh
 
-Importent: if you want to use tagbar plugin, you must install exuberant-ctags.
+if you want to use tagbar plugin, you must install exuberant-ctags.
 
-I have no idea how install this on other Operating systems.
+I have no idea how to install this on other Operating systems.
 
-## Importent
 
 [0]: https://github.com/gmarik/Vundle.vim
 [1]: https://github.com/jaredly/vim-debug
