@@ -13,6 +13,6 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Backups your old vimrc file
 cp ~/.vimrc ~/.vimrc.backup 2>/dev/null
 # Copies vimrc
-cp .vimrc ~
+cp vimrc ~/.vimrc
 # Installs plugins with Vundle
 vim +PluginInstall +qall
