@@ -112,7 +112,8 @@ set mouse=a
 "" vim-bufferline
 
 "" molokai
-let g:molokai_original = 1
+"let g:molokai_original = 1
+colorscheme molokai
 set t_Co=256
 
 "" nerdtree 
