@@ -8,11 +8,16 @@ echo '
 	/_/ |_| /_/  _____/  /_/  /_/ /_/ /_/ 
 '
 
+# Backups your old vimrc file and .vim dir
+tar czf .vim_backup.tar.gz -C ~ .vimrc .vim/
+rm -rf ~/.vimrc ~/.vim/
+mv .vim_backup.tar.gz ~/.vim_backup.tar.gz
+
 # Clones Vundle
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-# Backups your old vimrc file
-cp ~/.vimrc ~/.vimrc.backup 2>/dev/null
+
 # Copies vimrc
 cp vimrc ~/.vimrc
+
 # Installs plugins with Vundle
 vim +PluginInstall +qall
