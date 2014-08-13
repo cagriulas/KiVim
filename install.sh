@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo '	 
-    ______ _________    ______            
+        ______ _________    ______            
 	___  //_/__(_)_ |  / /__(_)______ ___ 
 	__  ,<  __  /__ | / /__  /__  __ `__ \
 	_  /| | _  / __ |/ / _  / _  / / / / /
@@ -9,9 +9,9 @@ echo '
 '
 
 # Backups your old vimrc file and .vim dir
-tar czf .vim_backup.tar.gz -C ~ .vimrc .vim/
+cp -r ~/.vim ~/.vim.backup
+cp ~/.vimrc ~/.vimrc.backup
 rm -rf ~/.vimrc ~/.vim/
-mv .vim_backup.tar.gz ~/.vim_backup.tar.gz
 
 # Clones Vundle
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
