@@ -16,6 +16,9 @@ mv .vim_backup.tar.gz ~/.vim_backup.tar.gz
 # Clones Vundle
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# Clones Molokai colors 'workaround for an error while vundle tries to install plugins for the first time'
+git clone https://github.com/tomasr/molokai.git ~/.vim/bundle/molokai
+
 # Copies vimrc
 cp vimrc ~/.vimrc
 
