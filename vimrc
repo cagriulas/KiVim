@@ -104,6 +104,8 @@ set number
 
 set mouse=a
 
+set clipboard=unnamedplus
+
 "" KiVim 
 function Ki()
 	:NERDTreeFocus
