@@ -147,7 +147,7 @@ let g:syntastic_python_checkers = ['flake8']
 map <Leader>sp :SyntasticCheck python<Esc>
 
 "tagbar
-map <Leader>c :TagbarToggle <Esc>
+map <Leader>tt :TagbarToggle <Esc>
 
 "" nerdcommenter
 
