@@ -34,7 +34,7 @@ Plugin 'gmarik/Vundle.vim'
 " Finding
 Plugin 'kien/ctrlp.vim' ""
 
-" Buffer
+" Buffer Explorer
 Plugin 'bling/vim-bufferline' ""
 
 " Color Theme
@@ -112,7 +112,10 @@ set mouse=a
 
 "" ctrlp.vim
 
-"" vim-bufferline
+"" minibufexpl.vim
+map <Leader>n :MBEbn<CR>
+map <Leader>b :MBEbb<CR>
+map <Leader>. :MBEbd<CR>
 
 "" molokai
 "let g:molokai_original = 1
