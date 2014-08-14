@@ -104,6 +104,19 @@ set number
 
 set mouse=a
 
+"" KiVim 
+function Ki()
+	:NERDTreeFocus
+	:TagbarOpen
+endfunction
+map <Leader>ki :exec Ki()<CR>
+
+function Kill()
+	:NERDTreeClose
+	:TagbarClose
+endfunction
+map <Leader>kl :exec Kill()<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Tweaks for Plugins
