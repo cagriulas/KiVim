@@ -50,7 +50,7 @@ Plugin 'scrooloose/syntastic' ""
 Plugin 'majutsushi/tagbar' ""
 
 " Commenter
-Plugin 'tomtom/tcomment_vim'
+Plugin 'scrooloose/nerdcommenter'
 
 " Status Bar
 Plugin 'bling/vim-airline' ""
@@ -149,9 +149,7 @@ map <Leader>sp :SyntasticCheck python<Esc>
 "tagbar
 map <Leader>c :TagbarToggle <Esc>
 
-"" tcomment_vim
-" runtime bundle/tcomment_vim/plugin/tcomment.vim
-map <Leader>tc :TComment<CR>
+"" nerdcommenter
 
 "" vim-airline
 set noshowmode
