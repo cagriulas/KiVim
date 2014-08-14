@@ -34,7 +34,7 @@ __Finding__
 
 __Buffer__
 
-[vim-bufferline][4]
+[minibufexpl.vim][4]
 
 
 __Color Theme__
@@ -60,7 +60,7 @@ __Class Browser__
 
 __Commenter__
 
-[tcomment_vim][9]
+[nerdcommenter][9]
 
 
 __Status Bar__
@@ -73,6 +73,9 @@ __Auto Completion__
 This plugin brings Vim to autocomplete Python statements. If you're not use KiVim for Python Development, use another autocompletion plugin instead of this.
 [jedi-vim][11]
 
+[delimitMate][12]
+
+[supertab][13]
 
 
 ## Installation
@@ -90,11 +93,13 @@ I have no idea how to install this on other Operating systems.
 [1]: https://github.com/jaredly/vim-debug
 [2]: https://github.com/joonty/vdebug.git
 [3]: https://github.com/kien/ctrlp.vim
-[4]: https://github.com/bling/vim-bufferline
+[4]: https://github.com/fholgado/minibufexpl.vim
 [5]: https://github.com/tomasr/molokai
 [6]: https://github.com/scrooloose/nerdtree
 [7]: https://github.com/scrooloose/syntastic
 [8]: https://github.com/majutsushi/tagbar
-[9]: https://github.com/tomtom/tcomment_vim
+[9]: https://github.com/scrooloose/nerdcommenter
 [10]: https://github.com/bling/vim-airline
 [11]: https://github.com/davidhalter/jedi-vim
+[12]: https://github.com/Raimondi/delimitMate
+[13]: https://github.com/ervandew/supertab
