@@ -57,6 +57,9 @@ Plugin 'bling/vim-airline' ""
 
 " Auto Completion
 Plugin 'davidhalter/jedi-vim' ""
+Plugin 'Raimondi/delimitMate'
+Plugin 'ervandew/supertab'
+
 
 " All of your Plugins must be added before the following line
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -185,3 +188,7 @@ let g:jedi#show_call_signatures = "1"
 "autocmd FileType python setlocal completeopt-=preview
 
 
+"" delimitMate
+
+
+"" supertab
