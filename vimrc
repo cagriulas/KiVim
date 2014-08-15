@@ -112,12 +112,14 @@ function Ki()
 	:TagbarOpen
 endfunction
 map <Leader>ki :exec Ki()<CR>
+command Ki exec Ki()
 
 function Kill()
 	:NERDTreeClose
 	:TagbarClose
 endfunction
 map <Leader>kl :exec Kill()<CR>
+command Ki exec Ki()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
