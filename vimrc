@@ -35,7 +35,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim' ""
 
 " Buffer Explorer
-Plugin 'bling/vim-bufferline' ""
+Plugin 'fholgado/minibufexpl.vim' ""
 
 " Color Theme
 Plugin 'tomasr/molokai' ""
