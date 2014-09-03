@@ -80,11 +80,23 @@ This plugin brings Vim to autocomplete Python statements. If you're not use KiVi
 
 ## Installation
 
-__On Linux__
+__On GNU/Linux__
 
-Just run install.sh
+Run install.sh
 
-if you want to use tagbar plugin, you must install exuberant-ctags.
+If you don't have pip, install it. Package name is python-pip almost all distro.
+
+For Syntastic install flake8
+```
+$ pip install --user flake8
+```
+This will install flake8 to ~.local/ . We decided to install packages to home which are not from our distro's repo. But you can install it globally yourself with this.
+
+```
+# pip install flake8
+```
+
+If you want to use tagbar plugin, you must install exuberant-ctags.
 
 I have no idea how to install this on other Operating systems.
 

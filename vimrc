@@ -32,31 +32,31 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'joonty/vdebug.git'
 
 " Finding
-Plugin 'kien/ctrlp.vim' ""
+Plugin 'kien/ctrlp.vim'
 
 " Buffer Explorer
-Plugin 'fholgado/minibufexpl.vim' ""
+Plugin 'fholgado/minibufexpl.vim'
 
 " Color Theme
-Plugin 'tomasr/molokai' ""
+Plugin 'tomasr/molokai'
 
 " Folder Navigator
-Plugin 'scrooloose/nerdtree' ""
+Plugin 'scrooloose/nerdtree'
 
 " Syntax Checker
-Plugin 'scrooloose/syntastic' ""
+Plugin 'scrooloose/syntastic'
 
 " Class Browser
-Plugin 'majutsushi/tagbar' ""
+Plugin 'majutsushi/tagbar'
 
 " Commenter
 Plugin 'scrooloose/nerdcommenter'
 
 " Status Bar
-Plugin 'bling/vim-airline' ""
+Plugin 'bling/vim-airline'
 
 " Auto Completion
-Plugin 'davidhalter/jedi-vim' ""
+Plugin 'davidhalter/jedi-vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ervandew/supertab'
 
@@ -94,19 +94,30 @@ if has('gui_running')
   map! <S-Insert> <MiddleMouse>
 endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" This line is added for vim-debug and syntastic. This plugins have 
+" dependencies from pip and we want this dependencies installed for only
+" current user. If you installed flake8 for all users you might want to
+" comment this line.
+let $PATH=$PATH . ':' . $HOME . '/.local/bin'
+
+" syntax on
 if has("syntax")
     syntax on
 endif
 
+" Change your leader key if you want
 let mapleader = ","
 
+" Enables numbering lines
 set number
 
-set mouse=a
+" Enables mouse support
+"set mouse=a
 
+" Enables x clipboard sharing
 set clipboard=unnamedplus
 
-"" KiVim 
+"" KiVim
 function Ki()
 	:NERDTreeFocus
 	:TagbarOpen
@@ -119,7 +130,7 @@ function Kill()
 	:TagbarClose
 endfunction
 map <Leader>kl :exec Kill()<CR>
-command Ki exec Ki()
+command Kill exec Kill()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -146,7 +157,10 @@ map <C-n> :NERDTreeToggle<CR>
 
 "" syntastic
 let g:syntastic_python_checkers = ['flake8']
-map <Leader>sp :SyntasticCheck python<Esc>
+map <Leader>ss :SyntasticCheck python<Esc>
+map <Leader>sf :SyntasticCheck flake8<Esc>
+map <Leader>s8 :SyntasticCheck pep8<Esc>
+map <Leader>sp :SyntasticCheck pyflakes<Esc>
 
 "tagbar
 map <Leader>tt :TagbarToggle <Esc>
